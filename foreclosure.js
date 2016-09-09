@@ -18,11 +18,18 @@ var monthsUntilEvicted;
    function missPayment(){
       account.defaulted++;
       if(account.defaulted >= account.defaultsToForeclose){
-        return true;
-   }
-  }stevesLoan = loan();
+        account.foreclosed = true;
+  }
+   var getBalance = function(){
+          return account.balance;
+        };
 
-}
+    var receivePayment = function(){
+      if(amount )
+
+
+
+};
  // stevesLoan{
  //        getBalance : 0,
  //        receivePayment : 0,
