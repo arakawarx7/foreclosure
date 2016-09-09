@@ -1,0 +1,31 @@
+'use strict';
+
+var steve;
+var stevesLoan;
+var month = 0;
+var monthsUntilEvicted;
+  function loan(){
+    var account = {
+        borrowed : 550000,
+        balance : 286000,
+        monthlyPayment : 1700,
+        defaulted : 0,
+       defaultsToForeclose : 5,
+       foreclosed : false
+
+
+   };
+   function missPayment(){
+      account.defaulted++;
+      if(account.defaulted >= account.defaultsToForeclose){
+        return true;
+   }
+  }stevesLoan = loan();
+
+}
+ // stevesLoan{
+ //        getBalance : 0,
+ //        receivePayment : 0,
+ //        getMonthlyPayment : 0,
+ //        isForeclosed : 0
+ //      }
